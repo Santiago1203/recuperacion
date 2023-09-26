@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+
+    <header>
+        <section class="home_css"> 
+            <div class="container">
+                <article>
+                    <img src="./img/img1css.png" alt="HTML">
+                    <h1>CSS</h1>
+                    <a href="./index.html"><button>Volver</button></a><br>
+                </article>
+            </div>            
+        </section>
+    </header>
+    <main>
+        <section id="info_css">
+            <div class="container">
+                <article>
+                    <h2>¿Qué es CSS?</h2>
+                    <p>Antes de comenzar, debes tener claro un concepto clave: una página web es realmente un documento de texto. En dicho documento se escribe código HTML, con el que se que crea el contenido de una web. Por otro lado, existe el código CSS, que unido al código HTML permite darle forma, color, posición (y otras características visuales) a un documento web. En resumen, se trata de un «idioma» o lenguaje, como podría ser el inglés o el alemán, que los navegadores web como Chrome o Firefox conocen y pueden entender. Nuestro objetivo como diseñadores y programadores web es precisamente ese: aprender el idioma e indicarle al navegador lo que debe hacer.</p>
+                    <img src="img/css1.png" alt="CSS-1">
+                    <p>La idea de CSS es la de utilizar el concepto de separación de presentación y contenido. Este concepto se basa en que, como programadores, lo ideal es separar claramente el código que escribimos. ¿Por qué? Porque con el tiempo, esto hará que el código sea más fácil de modificar y mantener. <br><br>
+                    La idea es la siguiente:</p>
+                    <ul>
+                        <li>Los documentos HTML (contenido) incluirán sólo información y datos, todo lo relativo a la información a transmitir.</li>
+                        <li>Los documentos CSS (presentación) inclurán sólo los aspectos relacionados con el estilo (diseño, colores, formas, etc...).</li>
+                    </ul>
+                    <img src="img/css2.png" alt="CSS-2">
+                    <p>De esta forma, se puede unificar todo lo relativo al diseño, a lo visual en un solo documento CSS, y con ello, varias ventajas:</p>
+                    <ul>
+                        <li>Si necesitamos hacer modificaciones visuales, lo haremos en un sólo lugar y se aplica a todo el sitio.</li>
+                        <li>Se reduce la duplicación de estilos en diferentes lugares. Es más fácil de organizar y hacer cambios.</li>
+                        <li>La información a transmitir es considerablemente menor (las páginas se descargan más rápido).</li>
+                        <li>Es más fácil crear versiones diferentes para otros dispositivos: tablets, smartphones, etc...</li>
+                    </ul>
+                    <h2>Demostración de CSS: una página HTML: ¡varios estilos!</h2>
+                    <p>Aquí mostraremos una página HTML con cuatro hojas de estilo diferentes. Haga clic en los enlaces "Hoja de estilo 1", "Hoja de estilo 2", "Hoja de estilo 3", "Hoja de estilo 4" a continuación para ver los diferentes estilos:</p>
+                    <img src="img/css3.png" alt="CSS-3">
+                    <h2>Sintaxis CSS</h2>
+                    <img src="img/css4.png" alt="CSS-4">
+                    <p>El selector apunta al elemento HTML al que desea aplicar estilo.<br>
+                    El bloque de declaración contiene una o más declaraciones separadas por punto y coma.<br>
+                    Cada declaración incluye un nombre de propiedad CSS y un valor, separados por dos puntos.<br>
+                    Varias declaraciones CSS están separadas por punto y coma y los bloques de declaración están rodeados por llaves.<br><br>
+                    En este ejemplo, todos los elementos "p" estarán alineados al centro, con un color de texto rojo:</p>
+                    <img src="img/css5.png" alt="CSS-5">
+                    <h2>Como agregar CSS</h2>
+                    <p>Hay tres formas de insertar una hoja de estilo:</p>
+                    <ul>
+                        <li>CSS externo</li>
+                        <li>CSS interno</li>
+                        <li>CSS en línea</li>
+                    </ul>
+                    <h3>CSS externo</h3>
+                    <p>Con una hoja de estilo externa, puedes cambiar el aspecto de un sitio web completo cambiando solo un archivo.<br>
+                    Cada página HTML debe incluir una referencia al archivo de hoja de estilo externo dentro del elemento "link", dentro de la sección head.</p>
+                    <h3>CSS interno</h3>
+                    <p>Se puede utilizar una hoja de estilo interna si una sola página HTML tiene un estilo único.<br>
+                    El estilo interno se define dentro del elemento "style", dentro de la sección principal.</p>
+                    <h3>CSS en línea</h3>
+                    <p>Se puede utilizar un estilo en línea para aplicar un estilo único a un solo elemento.<br>
+                    Para usar estilos en línea, agregue el atributo de estilo al elemento relevante. El atributo de estilo puede contener cualquier propiedad CSS.</p>
+                    <h2>Colores CSS</h2>
+                    <p>Los colores se especifican utilizando nombres de colores predefinidos o valores RGB, HEX, HSL, RGBA, HSLA.<br>
+                    En CSS, se puede especificar un color utilizando un nombre de color predefinido:</p>
+                    <img src="img/css6.png" alt="CSS-6">
+                    <h2>Fondos CSS</h2>
+                    <p>Las propiedades de fondo de CSS se utilizan para agregar efectos de fondo a los elementos.<br>
+                    En estos capítulos, aprenderá sobre las siguientes propiedades de fondo de CSS:</p>
+                    <ul>
+                        <li>background-color</li>
+                        <li>background-image</li>
+                    </ul>
+                    <p>La background-colorpropiedad especifica el color de fondo de un elemento.<br>
+                    Con CSS, un color suele especificarse mediante:</p>
+                    <ul>
+                        <li>un nombre de color válido, como "rojo"</li>
+                        <li>un valor HEX, como "#ff0000"</li>
+                        <li>un valor RGB, como "rgb(255,0,0)"</li>
+                    </ul>
+                    <h2>Imagen de fondo CSS</h2>
+                    <p>La background-imagepropiedad especifica una imagen para usar como fondo de un elemento.<br>
+                    De forma predeterminada, la imagen se repite para cubrir todo el elemento.<br>
+                    Establecer la imagen de fondo de una página:</p>
+                    <img src="img/css7.png" alt="CSS-7">
+                </article>
+                <p>Haga click en el botón para imprimir la página actual:</p>
+                <button onclick="window.print()">Imprimir esta página</button>
+            </div>
+        </section>
+    </main>
+    <footer id="pie">
+        <div class="container">
+            <article>
+                <img src="./img/instagram.png" alt="Instagram">
+                <img src="./img/github.png" alt="Github">
+                <p>Creado por RS · Alojado en GitHub.</p>
+                <p>© Todos los derechos reservados.</p>
+            </article>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script src="./js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+
+    <header>
+        <section class="home"> 
+            <div class="container">
+                <article>
+                    <img src="./img/html.png" alt="HTML">
+                    <h1>Lenguaje HTML5</h1>
+                    <p>Lenguaje de marcado HTML5 utilizado en el desarrollo web para crear el contenido y la estructura de una página web.</p>
+                    <a href="./index.html"><button>Volver</button></a><br>
+                </article>
+            </div>            
+        </section>
+    </header>
+    <main>
+        <section id="introduccion">
+            <div class="container">
+                <article>
+                    <h2>Introducción a HTML5</h2>
+                    <a href="#definicion"><button>¿Que es html?</button></a><br>
+                    <a href="./elementos.html"><button id="elementos">Elementos en HTML</button></a><br>
+                    <a href="./estilos.html"><button id="estilos">Estilos en  HTML</button></a>
+                </article>
+            </div>
+        </section>
+        <section id="definicion">
+            <div class="container">
+                <article>
+                    <h2>¿Que es HTML?</h2>
+                    <h3>HTML, el código y las etiquetas</h3>
+                    <p>El documento que lee el navegador está escrito en un lenguaje de marcado llamado HTML, que son las siglas de HyperText Markup Language (Lenguaje de marcas de hipertexto), o lo que es lo mismo, un lenguaje de etiquetas que permite incluir o hacer referencia a todo tipo de información.</p>
+                    <img src="./img/chrome.png" alt="Chrome">
+                    <ul>
+                        <li>HTML significa lenguaje de marcado de hipertexto</li>
+                        <li>HTML es el lenguaje de marcado estándar para crear páginas web.</li>
+                        <li>HTML describe la estructura de una página web.</li>
+                        <li>HTML consta de una serie de elementos.</li>
+                        <li>Los elementos HTML le dicen al navegador cómo mostrar el contenido.</li>
+                        <li>Los elementos HTML etiquetan fragmentos de contenido como "este es un encabezado", "este es un párrafo", "este es un enlace", etc.</li>
+                    </ul>
+                    <h3>Ejemplo</h3>
+                    <img src="./img/codigo.png" alt="Código HTML">
+                    <h3>Explicación del código de la imágen</h3>
+                    <ol>
+                        <li>La declaración "!DOCTYPE html" define que este documento es un documento HTML5</li>
+                        <li>El elemento "html" es el elemento raíz de una página HTML.</li>
+                        <li>El elemento "head" contiene metainformación sobre la página HTML.</li>
+                        <li>El elemento "title" especifica un título para la página HTML (que se muestra en la barra de título del navegador o en la pestaña de la página)</li>
+                        <li>El elemento "body" define el cuerpo del documento y es un contenedor de todos los contenidos visibles, como encabezados, párrafos, imágenes, hipervínculos, tablas, listas, etc.</li>
+                        <li>El elemento "h1" define un encabezado grande.</li>
+                        <li>El elemento "p" define un párrafo.</li>
+                    </ol>
+                </article>
+            </div>
+        </section>
+        <section id="elemento">
+            <div class="container">
+                <article>
+                    <h2>¿Qué es un elemento HTML?</h2>
+                    <p>Un elemento HTML se define mediante una etiqueta de inicio, algo de contenido y una etiqueta de cierre:</p>
+                    <h3>Estructura de la página HTML</h3>
+                    <img src="./img/estructura.png" alt="Estructura">
+                </article>
+                <p>Haga click en el botón para imprimir la página actual:</p>
+                <button onclick="window.print()">Imprimir esta página</button>
+            </div>
+        </section>
+    </main>
+    <footer id="pie">
+        <div class="container">
+            <article>
+                <img src="./img/instagram.png" alt="Instagram">
+                <img src="./img/github.png" alt="Github">
+                <p>Creado por RS · Alojado en GitHub.</p>
+                <p>© Todos los derechos reservados.</p>
+            </article>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script src="./js/main.js"></script>
+</body>
+</html>

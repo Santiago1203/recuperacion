@@ -1,0 +1,365 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&display=swap');
+
+:root {
+        --bg-body: #000000;
+        --primary-color: #FF8000;
+        --fontSize-title: 40px;
+        --fontSize-parrafos: 24px;
+}
+
+.tema-color {
+    position: fixed;
+    right: 0;
+    top: 300px;
+    z-index: 99;
+    background: transparent;
+}
+
+.cont-colores{
+    width: 100px;
+    height: 30px 0;
+    background: #292c36;
+    text-align: center;
+    position: absolute;
+    right: -100px;
+    transition: 1s;
+    top: -64px;
+}
+
+.cont-colores.active {
+    right: 0;
+}
+
+.open-panel {
+    background: #292c36;
+    color: #fff;
+    padding: 12px 50px;
+    transform: rotate(-90deg);
+    position: relative;
+    right: -64px;
+    transition: .9s;
+}
+
+.open-panel.active{
+    right: 37px;
+}
+
+.cont-colores button{
+    width: 30px;
+    height: 30px;
+    display: block;
+    color: transparent;
+    border-radius: 40px;
+    margin: 10px auto;
+}
+
+.cont-colores button:nth-child(1){
+    background: #549FC7;
+}
+
+.cont-colores button:nth-child(2){
+    background: #2DE3B3;
+}
+
+.cont-colores button:nth-child(3){
+    background: var(--primary-color);
+}
+
+h2,h3,h4,h5,h6{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    color: var(--primary-color);
+}
+
+p{
+    font-family: 'Work Sans', sans-serif;
+}
+
+/* Header */
+
+.home{
+    background-image: url(../img/bgPrincipal.png);
+    position: relative; 
+    text-align: center;
+    padding: 250px 0;
+}
+
+.home h1{
+    -webkit-text-stroke: 2px black;
+    color: #fff;
+    font-size: 57px;
+    font-weight: 700;
+}
+
+.home p{
+    color: #fff;
+    font-size: 20px;
+    font-weight: 300;
+}
+
+/* Info cursos */
+
+#cursos {
+    padding: 50px 0 200px 0;
+    background-color: var(--bg-body);
+    position: relative; 
+    text-align: center;
+}
+
+#cursos h2{
+    font-size: var(--fontSize-title);
+    margin: 200px 0 50px 0;
+}
+
+#cursos p{
+    font-size: var(--fontSize-parrafos);
+    color: #fff;
+    line-height: 50px;
+}
+
+#cursos button{
+    color: #fff;
+    background: var(--primary-color);
+    font-size: var(--fontSize-title);
+    font-weight: 500;
+    border-radius: 10px;
+    padding: 5px 30px;
+    margin: 20px 50px 0 50px;
+}
+
+a{
+    text-decoration: none;
+}
+
+/* HTML */
+
+.home button{
+    background: var(--primary-color);
+    color: #fff;
+    font-size: var(--fontSize-title);
+    font-weight: 500;
+    border-radius: 10px;
+    padding: 5px 30px;
+    margin: 20px 50px 0 50px;
+}
+
+#introduccion{
+    padding: 200px 0 50px 0;
+    background-color: #000000;
+    position: relative; 
+}
+
+#introduccion button{
+    background: var(--primary-color);
+    color: #fff;
+    font-size: var(--fontSize-parrafos);
+    font-weight: 500;
+    border-radius: 10px;
+    padding: 2px 30px;
+    margin: 20px 50px;
+    text-align: center;
+}
+
+#introduccion h2{
+    text-align: center;
+    font-size: 30px;
+    font-weight: 700;
+}
+
+#definicion{
+    padding: 100px 0 50px 0;
+    background-color: #000000;
+    position: relative; 
+}
+
+#definicion h2{
+    text-align: center;
+    font-size: 30px;
+    font-weight: 700;
+    margin-bottom: 50px;
+}
+
+#definicion h3{
+    font-size: var(--fontSize-parrafos);
+    font-weight: 400;
+    margin: 40px 0;
+}
+
+#definicion p, li{
+    color: #fff;
+    font-size: var(--fontSize-parrafos);
+    margin-bottom: 20px;
+}
+
+#definicion img{
+    display: flex;
+    justify-content: center;
+    margin: 50px 0;
+}
+
+#elemento{
+    padding: 50px 0 50px 0;
+    background-color: #000000;
+    position: relative; 
+}
+
+#elemento h2{
+    text-align: center;
+    font-size: 30px;
+    font-weight: 700;
+    margin-bottom: 50px;
+}
+
+#elemento h3{
+    font-size: var(--fontSize-parrafos);
+    font-weight: 400;
+    margin: 40px 0;
+}
+
+#elemento p{
+    color: #fff;
+    font-size: var(--fontSize-parrafos);
+    margin-bottom: 50px;
+}
+
+#elemento img{
+    margin: 50px 0 200px 0;
+}
+
+#elemento button{
+    background: var(--primary-color);
+    color: #fff;
+    font-size: var(--fontSize-parrafos);
+    font-weight: 500;
+    border-radius: 10px;
+    padding: 2px 30px;
+    margin-bottom: 70px;
+    text-align: center;
+}
+
+.defElementos{
+    padding: 50px 0 200px 0;
+    background-color: #000000;
+    position: relative; 
+}
+
+.defElementos h2{
+    text-align: center;
+    font-size: 30px;
+    font-weight: 700;
+    margin: 150px 0 50px 0;
+}
+
+#defElementos h3{
+    font-size: var(--fontSize-parrafos);
+    font-weight: 400;
+    margin: 40px 0;
+}
+
+.defElementos p, li{
+    color: #fff;
+    font-size: var(--fontSize-parrafos);
+    margin-bottom: 50px;
+}
+
+.defElementos img{
+    margin: 20px 0 50px 0;
+}
+
+.defElementos button{
+    background: var(--primary-color);
+    color: #fff;
+    font-size: var(--fontSize-parrafos);
+    font-weight: 500;
+    border-radius: 10px;
+    padding: 2px 30px;
+    margin-bottom: 70px;
+    text-align: center;
+}
+
+/* CSS */
+
+.home_css{
+    background-image: url(../img/bgPrincipal.png);
+    position: relative;
+    text-align: center;
+    padding: 250px 0;
+}
+
+.home_css h1{
+    -webkit-text-stroke: 2px black;
+    color: #fff;
+    font-size: 57px;
+    font-weight: 700;
+}
+
+.home_css button{
+    background: var(--primary-color);
+    color: #fff;
+    font-size: var(--fontSize-title);
+    font-weight: 500;
+    border-radius: 10px;
+    padding: 0 30px;
+    margin: 20px 50px 0 50px;
+}
+
+#info_css{
+    background-color: #000000;
+    position: relative;
+    padding: 250px 0;
+}
+
+#info_css h2{
+    color: var(--primary-color);
+    font-size: var(--fontSize-title);
+    text-align: center;
+    margin-bottom: 70px 0;
+}
+
+#info_css h3{
+    color: #fff;
+    font-weight: 700;
+    font-size: 30px;
+    margin-bottom: 20px 0 40px 0;
+}
+
+#info_css p{
+    color: #fff;
+    font-size: var(--fontSize-parrafos);
+    line-height: 50px;
+    margin-bottom: 50px;
+}
+
+#info_css img{
+    padding: 50px 0 70px 0;
+}
+
+#info_css button{
+    background: var(--primary-color);
+    color: #fff;
+    font-size: var(--fontSize-parrafos);
+    font-weight: 500;
+    border-radius: 10px;
+    padding: 2px 30px;
+    margin-bottom: 70px;
+    text-align: center;
+}
+
+/* Footer */
+
+#pie{
+    background-color: var(--bg-body);
+    position: relative; 
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+#pie img{
+    margin-bottom: 20px;
+}
+
+#pie p{
+    font-size: 18px;
+    color: #fff;
+}
+
